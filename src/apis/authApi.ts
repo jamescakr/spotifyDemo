@@ -1,5 +1,5 @@
 import axios from "axios";
-import { clientId, clientSecret } from "../configs/authConfig";
+import { CLIENT_ID, CLIENT_SECRET } from "../configs/authConfig";
 import type { ClientCredentialTokenResponse } from "../models/auth";
 
 const encodedBase64 = (data: string): string => {
@@ -17,7 +17,7 @@ export const getClientCredentialToken =
         body,
         {
           headers: {
-            Authorization: `Basic ${encodedBase64(clientId + ":" + clientSecret)}`,
+            Authorization: `Basic ${encodedBase64(CLIENT_ID + ":" + CLIENT_SECRET)}`,
             "Content-Type": "application/x-www-form-urlencoded",
           },
         }
