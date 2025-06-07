@@ -2,7 +2,7 @@ import React, { Suspense, useEffect } from "react";
 import { Routes, Route } from "react-router";
 import LoadingSpinner from "./common/components/LoadingSpinner";
 import useExchangeToken from "./hooks/useExchangeToken";
-import OAuthCallback from "./pages/OAuthCallbabck";
+import OAuthCallback from "./pages/OAuthCallback";
 const AppLayout = React.lazy(() => import("./layout/AppLayout"));
 const HomePage = React.lazy(() => import("./pages/HomePage/HomePage"));
 const SearchPage = React.lazy(() => import("./pages/SearchPage/SearchPage"));
