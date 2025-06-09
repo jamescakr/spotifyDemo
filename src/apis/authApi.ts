@@ -44,6 +44,7 @@ export const exchangeToken = async (
     }
     const body = new URLSearchParams({
       client_id: CLIENT_ID,
+      client_secret: CLIENT_SECRET,
       grant_type: "authorization_code",
       code,
       redirect_uri: REDIRECT_URI,
